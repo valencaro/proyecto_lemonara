@@ -1,0 +1,596 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*INDEX*/
+#grid__container__index{
+    display: grid;
+    grid-template-areas:
+        "menu"
+        "promo"
+        "bestsellers"
+        "testimonios"
+        "contacto"
+        "footer";
+    grid-template-rows: auto auto auto auto auto auto;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: menu;
+}
+
+.menu__link{
+    font-style: normal;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    display: flex;
+    margin-top: 1.30rem;
+    border-radius: 3px;
+}
+
+a:hover{
+    background-color:rgb(240, 202, 145);
+    transition: .5s;
+}
+
+.logo{
+    margin-top: 1.30rem;
+}
+
+
+#promo{
+    background-color: #F6E586;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    grid-area: promo;
+}
+
+.promo__subtitulo{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-size:27px;
+    font-weight: 400;
+    line-height: 35px;
+    color: black;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.promo__box1{
+    height: 300px;
+    width: 415px;
+}
+
+button{
+    background-color: black;
+    color: white; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.75rem;
+    margin-left: 7.5rem;
+}
+
+.promo__box2{
+    height: 300px;
+    width: 415px;
+}
+
+.promo__img{
+    padding: 2rem;
+    width: 415px;
+    height: 300px;
+}
+
+#bestsellers{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    grid-area: bestsellers;
+    display: flex;
+    flex-flow: row  wrap;
+    justify-content: space-around;
+}
+
+.bestsellers__div{
+    margin-bottom: 1.75rem;
+}
+
+.bestsellers__img{
+    width: 260px;
+    height: 260px;
+}
+
+.bestsellers__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.bestsellers__letra__subtitulo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+
+#testimonios{
+    background-color: #F6E586;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    grid-area: testimonios;
+}
+
+.testimonios__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.testimonios__parrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 1rem;
+    text-align: center;
+}
+
+.testimonios__img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#contacto{
+    grid-area: contacto;
+}
+
+.contacto__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.formulario{
+    text-align: center;
+}
+
+.input__text{
+    color: #495057;
+    padding: 0.375rem 0.75rem;
+    background-clip: border-box;
+    border: 1px solid #ced4da;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0.5rem;
+    width: 500px;
+    height: 40px;
+}
+
+.input__submit{
+    margin-left: 1rem;
+    background-color: black;
+    color: white; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0.5rem;
+    margin-bottom: 5rem;
+}
+
+.footer{
+    background-color: black;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+}
+
+.footer__container{
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 3rem;
+}
+
+.footer__titulo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.footer__parrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: white;
+}
+
+.footer__copy{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: white;
+}
+
+/*SOBRE MI*/
+.sobremi{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.sobremi__img{
+    border-radius: 50% 50%;
+    width: 230px;
+    margin-top: 8rem;
+    margin-left: 2rem;
+}
+
+.sobremi__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    background-color: #F6E586;
+    padding: 1rem;
+}
+
+.sobremi__parrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 3.5rem;
+    line-height: 1.25;
+}
+
+.sobremi__div{
+    width: 530px;
+    margin-left: 3rem;
+}
+
+
+
+/*TORTAS CLASICAS*/
+#grid__container__tortas{
+    display: grid;
+    grid-template-areas:
+        "menu"
+        "tortas"
+        "footer";
+    grid-template-rows: auto auto auto;
+}
+
+#tortas{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    grid-area: tortas;
+}
+
+.tortas__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+    background-color: #F6E586;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.tortas__box{
+    width: 260px;
+    height: 260px;
+    margin-top: 3rem;
+}
+
+.tortas__img{
+    width: 260px;
+    height: 260px;
+}
+
+#tortas2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    margin-bottom: 3rem;
+}
+
+.tortas__box2{
+    width: 260px;
+    height: 260px;
+    margin-top: 2rem;
+}
+
+/*DESAYUNOS*/
+.desayunos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.desayunos__texto{
+    width: 450px;
+    height: 300px;
+    margin-top: 5.3rem;
+    margin-bottom: 3.8rem;
+    padding-top: 1rem;
+}
+
+.desayunos__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 3rem;
+    background-color: #F6E586;
+    padding: 1rem;
+}
+
+.desayunos__parrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.25;
+}
+
+.desayunos__img{
+    width: 450px;
+    margin-top: 3.5rem;
+}
+
+
+/*PARA EL CAFE*/
+#content__item__carrusel{
+    height: 400px;
+    width: 460px;
+    overflow: hidden;
+    margin-left: 6.5rem;
+    margin-top: 3rem;
+}
+
+.item__carrusel{
+    height: 100%;
+    position: relative;
+}
+
+.tarjeta__carrusel{
+    height: 100%;
+}
+
+.flechas__carrusel{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.enlace__carrusel{
+    text-decoration: none;
+}
+
+.enlace__puntos{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style: none;
+    color: rgb(61, 60, 60);
+}
+
+i{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+
+#content__puntos__carrusel{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img__carrusel{
+    width: 100%;
+    height: 100%;
+}
+
+.paraelcafe{
+    width: 450px;
+    text-align: center;
+}
+
+.paraelcafe__box{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+
+.paraelcafe__titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    background-color: #F6E586;
+}
+
+.paraelcafe__parrafo{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+
+
+@media (max-width: 720px) {
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    a{
+        border: 100vw;
+    }
+    .menu__link{
+        background-color: #c4c4c4;
+        font-size: 15px !important; 
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        text-align: center;
+        border: 100vw;
+        width: 100vw;
+    }
+    .logo{
+        display: none;
+    }
+    .promo__subtitulo{
+        font-size: 30px;
+        line-height: 2.5rem;
+    }
+    .promo__img{
+        width: 430px;
+        height: 330px;
+    }        
+    #bestsellers{
+        margin-bottom: 0.5rem;
+    }
+    .bestsellers__img{
+        width: 300px;
+        height: auto;
+    }
+    .bestsellers__titulo{
+        font-size: 18px !important;
+    }
+    .bestsellers__letra__subtitulo{
+        font-size: 16px;
+        padding: 0.7rem;
+    }
+    .testimonios__titulo{
+        font-size: 18px !important;
+    }
+    .testimonios__parrafo{
+        font-size: 16px;
+    }
+    .contacto__titulo{
+        margin-top: 2rem;
+        font-size: 18px;
+    }
+    .input__text{
+        font-size: 14px;
+    }
+    .input__submit{
+        font-size: 14px;
+        margin-bottom: 2rem;
+    }
+    .footer__container{
+        font-size: 14px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width:480px){
+    .menu__link{
+        font-size: 15px !important;
+    }
+    .promo__subtitulo{
+        padding-top: 2rem;
+        font-size: 15px;
+    }
+    .promo__img{
+        width: 430px;
+        height: 330px;
+    }
+    .bestsellers__titulo{
+        font-size: 20px !important;
+    }
+    .bestsellers__letra__subtitulo{
+        font-size: 15px;
+    }
+    .testimonios__titulo{
+        font-size: 20px !important;
+    }
+    .testimonios__parrafo{
+        font-size: 15px;
+    }
+    .testimonios__img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacto__titulo{
+        font-size: 14px;
+    }
+    .input__text{
+        font-size: 12px;
+    }
+    .contacto__titulo{
+        margin-top: 2rem;
+    }
+    .input__submit{
+        margin-bottom: 2rem;
+    }
+    .footer__titulo{
+        font-size: 13px;
+    }
+    .footer__parrafo{
+        font-size: 11px;
+    }
+}
+
+@media (max-width:320px){
+    .menu__link{
+        background-color: #c4c4c4;
+        font-size: 20px !important; 
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
+        text-align: center;
+    }
+
+}
