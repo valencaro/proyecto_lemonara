@@ -21,7 +21,7 @@
 }
 
 .header{
-    height: 80px;
+    height: 70px;
     width: 100%;
     top: 0;
     left: 0;
@@ -65,11 +65,11 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 8px 12px;
-    border-radius: 3px;
+    border-radius: 6px;
 }
 
 .menu__link:hover{
-    background-color: #F6E586;
+    background-color: #ffddd2;
     transition: 0.5s;
 }
 
@@ -93,14 +93,6 @@
     padding-top: 4rem;
     padding-bottom: 1rem;
     text-align: center;
-}
-
-.animate__backInLeft{
-    animation-duration: 3.8;
-}
-
-.animate__bounceInRight{
-    animation-duration: 3.8;
 }
 
 .promo__box1{
