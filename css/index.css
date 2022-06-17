@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 /*INDEX*/
+h5{
+    text-align: center;
+    margin-top: 2rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.row{
+    text-align: center;
+    justify-content: center;
+}
+
+.btn{
+    margin-bottom: 2rem;
+}
+
 #grid__container__index{
     display: grid;
     grid-template-areas:
@@ -18,47 +33,6 @@
 
 .body{
     padding: 90px 20px 0;
-}
-
-.header{
-    height: 70px;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: transparent;
-}
-
-.menu{
-    display: flex;
-    justify-content: space-between;
-    grid-area: menu;
-
-    max-width: 1150px;
-    margin: 0 auto;
-}
-
-.logo{
-    padding: 0 40px;
-    line-height: 80px;
-    margin-left: 2rem;
-}
-
-.nav__menu{
-    display: flex;
-    margin-right: 3rem;
-    list-style: none;
-}
-
-.nav__menu__item{
-    font-style: normal;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin: 0 10px;
-    line-height: 80px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    padding: 10px;
-    width: max-content;
 }
 
 .menu__link{
@@ -169,6 +143,15 @@ button{
     margin-top: 2rem;
     margin-bottom: 1.5rem;
     grid-area: testimonios;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-text{
+    text-align: center;
 }
 
 .testimonios__titulo{
@@ -444,53 +427,20 @@ button{
 
 
 /*PARA EL CAFE*/
-#content__item__carrusel{
-    height: 400px;
-    width: 460px;
-    overflow: hidden;
-    margin-left: 6.5rem;
-    margin-top: 3rem;
+
+.carrousel-inner{
+    width: 300px;
+    height: 300px;
 }
 
-.item__carrusel{
-    height: 100%;
-    position: relative;
+.carrousel-item{
+    width: 300px;
+    height: 300px;
 }
 
-.tarjeta__carrusel{
-    height: 100%;
-}
-
-.flechas__carrusel{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.enlace__carrusel{
-    text-decoration: none;
-}
-
-.enlace__puntos{
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-style: none;
-    color: rgb(61, 60, 60);
-}
-
-i{
-    color: rgb(255, 255, 255);
-    font-size: 2rem;
-}
-
-#content__puntos__carrusel{
-    display: flex;
-    justify-content: space-around;
+.d-block w-100{
+    width: 300px;
+    height: 300px;
 }
 
 .img__carrusel{
