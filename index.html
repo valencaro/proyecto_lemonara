@@ -15,51 +15,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css"/>
 </head>
-<body id="grid__container__index">
-    <div class="container-xl">
-        <header class="header">
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                      <img src="./img/logo.jpeg" alt="" width="65" height="60">
-                    </a>
-                  </div>
-                <div class="container-fluid">
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+<body id="grid__container__index container-xl">
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="./img/logo.png" alt="" width="65" height="63">
+                </a>
+            </div>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./pages/sobremi.html">Sobre mí</a>
                         </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="./pages/tortasclasicas2.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Tortas clásicas
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <li><a class="dropdown-item" href="#">Torta oreo</a></li>
-                          <li><a class="dropdown-item" href="#">Cheesecake de frutos rojos</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="#">Rogel</a></li>
-                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/tortasclasicas2.html">Tortas clásicas</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="./pages/desayunos.html">Desayunos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./pages/paraelcafe.html">Para el cafe </a>
+                            <a class="nav-link active" aria-current="page" href="./pages/paraelcafe.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
-              </nav>
-        </header>
-        <section id="promo">
-            <div class="promo__box1 animate__animated animate__backInLeft">
-                <p class="promo__subtitulo">APROVECHÁ EL<br>45% OFF<br>EN PRODUCTOS <br> SELECCIONADOS</p>
-            <button type="button"> COMPRAR AHORA </button>
-            </div>
-            <div class="promo__box2 animate__animated animate__bounceInRight">
-                <img class="promo__img"src="./img/trestortas.jpg" alt="tres tortas">
-            </div>
-        </section>
-        <article>
+        </nav>
+    </header>
+    <section class="promo">
+        <div class="promo__box1 animate__animated animate__backInLeft">
+            <p class="promo__subtitulo">APROVECHÁ EL 45% OFF EN PRODUCTOS SELECCIONADOS</p>
+        <div class="promo__box3">
+            <button type="button">COMPRAR AHORA</button>
+        </div>
+        </div>
+        <div class="promo__box2 animate__animated animate__bounceInRight">
+            <img class="promo__img" src="./img/trestortas.jpg" alt="">
+        </div>
+    </section>
+    <article>
             <div>
                 <h3 class="bestsellers__titulo">Best sellers</h3>
                 <p class="bestsellers__letra__subtitulo">Tentate con los más elegidos por los clientes y probalos vos mismo</p>
@@ -78,28 +72,33 @@
                     <img class="bestsellers__img" src="./img/cookies.jpg" alt="cookies con chip de chocolate">
                 </div>
             </section>
-        </article>
-        <section id="testimonios">
+    </article>
+    <section id="testimonios">
             <div class="container">
-                <div class="card" style="width: 18rem;">
-                    <!-- <div class="opacity-50">
-                        <img src="./img/macarrons1.jpg" class="card-img-top" alt="...">
-                    </div> -->
-                    <div class="card-body">
-                      <p class="card-text">Cande, riquisimo todo!! El mantecol una locura la cremosidad, todos qudaron encantados y maravillados con lo rico que estaba todo, mil gracias!</p>
-                    </div>
-                    <div class="card-body">
-                        <p class="card-text">Cande, riquisimo todo!! El mantecol una locura la cremosidad, todos qudaron encantados y maravillados con lo rico que estaba todo, mil gracias!</p>
-                      </div>
-                    <div class="card-body">
-                        <p class="card-text">Cande, riquisimo todo!! El mantecol una locura la cremosidad, todos qudaron encantados y maravillados con lo rico que estaba todo, mil gracias!</p>
-                    </div>
+                <h3 class="testimonios__titulo">
+                    Algunos testimonios
+                </h3>
+            </div>
+            <div class="container">
+                <p class="testimonios__parrafo">
+                    Conocé la opinión de todos los clientes con los que trabajamos
+                </p>
+            </div>
+            <div class="testimonios__box">
+                <div>
+                    <img class="testimonios__img" src="./img/testimonio1.png" alt="">
+                </div>
+                <div>
+                    <img class="testimonios__img" src="./img/testimonio2.png" alt="">
+                </div>
+                <div>
+                    <img class="testimonios__img" src="./img/testimonio3.png" alt="">
                 </div>
             </div>
-        </section>
-        <section id="contacto">
+    </section>
+    <section id="contacto">
             <div>
-                <h5>Si tenés alguna duda, contactame</h5>
+                <h5 class="contacto__titulo">Si tenés alguna duda, contactame</h5>
             </div>
             <div class="row">
                 <div class="col-4">
@@ -118,17 +117,19 @@
                     <button type="submit" class="btn btn-secondary">Enviar</button>
                 </div>
             </div>
-        </section>
-        <footer class="footer">
+    </section>
+    <footer class="footer">
             <div class="footer__container">
                 <h3 class="footer__titulo">LEMONARA PASTELERIA</h3>
                 <p class="footer__parrafo">Te  acompañamos en los mejores momentos <br> de la forma más dulce y rica. Nos gusta <br> mejorar continuamente por eso trabajamos <br> con la calidad y excelencia que todo producto <br> necesita.</p>
             </div>
             <div class="footer__container">
-                <p class="footer__parrafo">Paternal, Capital Federal <br>Martes a sábados de 10:00 a 18:00hs <br> <a class="footer__parrafo" href="https://www.instagram.com/lemonarapasteleria/?hl=es">Instagram</a> <br> Whatsapp: 11 3018-8283</p>
+                <p class="footer__parrafo">Paternal, Capital Federal</p>
+                <p class="footer__parrafo">Martes a sábados de 10:00 a 18:00hs</p>
+                <a class="footer__parrafo" href="https://www.instagram.com/lemonarapasteleria/?hl=es">Instagram</a>
+                <p class="footer__parrafo">Whatsapp: 11 3018-8283</p>
             </div>
-        </footer>
-    </div>
+    </footer>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </body>
 </html>

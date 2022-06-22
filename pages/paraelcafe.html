@@ -6,67 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Para el cafe</title>
+    <title>Contacto</title>
     <link rel="shortcut icon" href="../img/logo-removebg-preview.png">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css">
 </head>
 <body>
-  <div class="container-lg">
     <header class="header">
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav class="navbar navbar-expand-lg">
           <div class="container">
-              <a class="navbar-brand" href="../index.html">
-                <img src="../img/logo.jpeg" alt="" width="65" height="60">
-              </a>
-            </div>
+            <a class="navbar-brand" href="../index.html">
+              <img class="logo" src="../img/logo.png" alt="" width="65" height="63">
+            </a>
+          </div>
           <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="sobremi.html">Sobre mí</a>
-                  </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="tortasclasicas2.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Tortas clásicas
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Torta oreo</a></li>
-                    <li><a class="dropdown-item" href="#">Cheesecake de frutos rojos</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Rogel</a></li>
-                  </ul>
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="desayunos.html">Desayunos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="paraelcafe.html">Para el cafe </a>
-                  </li>
-              </ul>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sobremi.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="tortasclasicas2.html">Tortas clásicas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="desayunos.html">Desayunos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="paraelcafe.html">Contacto</a>
+                    </li>
+                </ul>
           </div>
-        </nav>
+      </nav>
     </header>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../img/cookies.jpg" class="d-block w-100" alt="alfajores de nuez">
-        </div>
-        <div class="carousel-item">
-          <img src="../img/cookies.jpg" class="d-block w-100" alt="cookies">
-        </div>
-        <div class="carousel-item">
-          <img src="../img/scon.jpg" class="d-block w-100" alt="scon">
-        </div>
-      </div>
-    </div>
-      <!-- <section class="paraelcafe">
-          <div>
-              <h3 class="paraelcafe__titulo">PARA EL CAFE</h3>
-              <p class="paraelcafe__parrafo">¿No sabés qué merendar? <br><br>
-                  Descubrí las opciones que tenemos preparadas para vos y y elegí la que más te gusta para acompañar con un rico café, té o mates. </p>
-          </div>
+    <section class="contacto">
+      <section class= "animate__animated animate__fadeIn">
+        <h3 class="contacto__titulo">Contacto</h3>
+        <p class="contacto__parrafo">Si tenés alguna consulta, no dudes en comunicarte conmigo y poder asesorarte</p>
       </section>
-  </div> -->
+      <form class="formulario animate__animated animate__fadeIn" action="get">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre completo">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mail">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Asunto">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos tu mensaje aca"></textarea>
+        </div>
+        <div>
+          <button type="button" class="btn btn-dark">Enviar</button>
+        </div>
+      </form>
+      <section class="contacto__imagen">
+        <div class="contacto__imgdiv">
+          <img class="imagen__contacto" src="../img/PASTELERIA.jpeg" alt="">
+        </div>
+      </section>
+    </section>
     <footer class="footer">
       <div class="footer__container">
           <h3 class="footer__titulo">LEMONARA PASTELERIA</h3>
@@ -76,7 +77,6 @@
           <p class="footer__parrafo">Paternal, Capital Federal <br>Martes a sábados de 10:00 a 18:00hs <br> <a class="footer__parrafo" href="https://www.instagram.com/lemonarapasteleria/?hl=es">Instagram</a> <br> Whatsapp: 11 3018-8283</p>
       </div>
     </footer>
-  </div>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </body>
 </html>
