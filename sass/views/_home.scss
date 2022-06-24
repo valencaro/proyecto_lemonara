@@ -6,46 +6,51 @@
     flex-flow: row wrap;
     justify-content: space-around;
 
-    .__box1{
+    .promo__box1{
         width: 300px;
         height: 250px;
         margin-top: 4rem;
+
+        .promo__subtitulo{
+            font-family: 'Josefin Sans', sans-serif;
+            font-style: normal;
+            font-size:27px;
+            font-weight: 400;
+            line-height: 35px;
+            color: black;
+            padding-bottom: 1rem;
+            text-align: center;
+            letter-spacing: 1px;
+        }
     }
-    .__box2{
+
+    .promo__box2{
         text-align: center;
+
+        .button{
+            background-color: black;
+            color: white;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 1rem;
+            padding: 0.75rem;
+        }
     }
-    .__box3{
+
+    .promo__box3{
         width: 415px;
         height: 250px;
         margin-top: 2rem;
-    }
-    .__subtitulo{
-        font-family: 'Josefin Sans', sans-serif;
-        font-style: normal;
-        font-size:27px;
-        font-weight: 400;
-        line-height: 35px;
-        color: black;
-        padding-bottom: 1rem;
-        text-align: center;
-        letter-spacing: 1px;
-    }
-    .__img{
-        width: 100%;
-        height: 100%;
-        margin-bottom: 2rem;
+
+        .__img{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 2rem;
+        }
     }
 
 }
 
-.button{
-    background-color: black;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    padding: 0.75rem;
-}
 
 .bestsellers__titulo{
     font-family: 'Montserrat', sans-serif;
@@ -73,19 +78,19 @@
     flex-flow: row  wrap;
     justify-content: space-around;
 
-    .__div{
+    .bestsellers__div{
         margin-bottom: 1.75rem;
         transition: transform .7s;
     
         &__div:hover{
             transform: scale(1.15,1.10);
         }
+
+        .bestsellers__img{
+            width: 230px;
+            height: 260px;
+        }
     }
-    .__img{
-        width: 230px;
-        height: 260px;
-    }
-    
 }
 
 #testimonios{
@@ -94,7 +99,7 @@
     margin-bottom: 1.5rem;
     grid-area: testimonios;
 
-    .__titulo{
+    .testimonios__titulo{
         font-family: 'Montserrat', sans-serif;
         font-size: 18px;
         font-weight: 400;
@@ -103,7 +108,7 @@
         text-align: center;
         padding-top: 2rem;
     }
-    .__parrafo{
+    .testimonios__parrafo{
         font-family: 'Open Sans', sans-serif;
         font-size: 1rem;
         font-weight: 400;
@@ -111,17 +116,17 @@
         padding: 1rem;
         text-align: center;
     }
-    .__box{
+    .testimonios__box{
         display: flex;
         flex-flow: row  wrap;
         justify-content: space-around;
     }
-    .__img{
+    .testimonios__img{
         width: 300px;
         height: 300px;
         margin-bottom: 2rem;
     }
-    .__imagen{
+    .testimonios__imagen{
         width: 100%;
     }
 }
