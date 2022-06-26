@@ -1,0 +1,50 @@
+/*CONTACTO*/
+
+.contacto{
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+
+    .contacto__texto{
+        width: 40%;
+
+        .contacto__titulo{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding: 1rem;
+            margin-top: 2rem;
+            text-align: left;
+            background-color:#F6E586;
+        }
+
+        .contacto__parrafo{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            padding: 1rem;
+            text-align: left;
+        }
+    }
+
+    .formulario{
+        width: 40%;
+        justify-content: left;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .contacto__imgdiv{
+        width: 40%;
+
+        .imagen__contacto{
+            width: 100%;
+        }
+    }
+}

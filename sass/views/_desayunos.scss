@@ -1,0 +1,54 @@
+.desayunos{
+
+    .desayunos__div{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        .desayunos__texto{
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+
+            .desayunos__titulo{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                text-transform: uppercase;
+                padding-bottom: 3rem;
+                background-color: #F6E586;
+                padding: 1rem;
+            }
+
+            .desayunos__parrafo{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                line-height: 1.25;
+            }
+        }
+
+        .desayunos__divimg{
+            margin-top: 4rem;
+            margin-bottom: 4rem;
+
+            .desayunos__img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

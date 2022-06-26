@@ -1,0 +1,66 @@
+.sobremi{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    
+    .sobremi__contenedor{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+
+        .sobremi__div1{
+            width: 500px;
+            height: 100px;
+    
+            .sobremi__img{
+                width: 100%;
+            }
+        }
+
+        .sobremi__div2{
+            width: 500px;
+    
+            .sobremi__titulo{
+                font-family: 'Montserrat', sans-serif;
+                font-size: 22px;
+                line-height: 1.2;
+                font-weight: 400;
+                text-transform: uppercase;
+                background-color: #F6E586;
+                padding: 1rem;
+            }
+    
+            .sobremi__parrafo{
+                font-family: 'Open Sans', sans-serif;
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 1rem;
+                line-height: 1.5;
+                text-align: justify;
+            }
+        }
+    }    
+}
+
+@media (max-widht: 576px) {
+    
+    .sobremi{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        margin-left: 2rem;
+        margin-right: 2rem;
+
+        .sobremi__div1{
+            width: 350px;
+            height: 250px;
+        }
+
+        .sobremi__titulo{
+            font-size: 16px;
+        }
+        
+        .sobremi__parrafo{
+            font-size: 14px;
+        }
+    }
+}
