@@ -1,10 +1,10 @@
 .tortas__titulo{
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: $fuente-titulos;
     font-weight: 400;
     text-transform: uppercase;
     padding-bottom: 3rem;
-    background-color: #F6E586;
+    background-color: $color-fondos;
     padding: 1rem;
     text-align: center;
     margin-top: 2rem;
@@ -14,15 +14,16 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    align-items: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     
     .tortas1{
         display: flex;
         flex-flow: row wrap;
         justify-content: space-arround;
-        margin-left: 5.6rem;
-        margin-right: 5.6rem;
         margin-bottom: 2rem;
     
         .tortas__box{
@@ -42,9 +43,9 @@
     .tortas2{
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
-        margin-left: 5.6rem;
-        margin-right: 5.6rem;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 2rem;
     
         .tortas__box2{
             margin-left: 3rem;
@@ -60,43 +61,5 @@
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// #tortas2{
-//     display: flex;
-//     flex-flow: row wrap;
-//     justify-content: space-evenly;
-//     margin-left: 5.6rem;
-//     margin-right: 5.6rem;
-//     margin-bottom: 3rem;
-// }
-
-// .tortas__box2{
-//     margin-top: 1rem;
-//     position: relative;
-//     display: flex;
-//     align-items: center;
-//     cursor: pointer;
-//     width: 200px;
-//     height: 280px;
-// }
-
-    
 
 

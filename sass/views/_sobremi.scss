@@ -9,7 +9,6 @@
 
         .sobremi__div1{
             width: 500px;
-            height: 100px;
     
             .sobremi__img{
                 width: 100%;
@@ -21,17 +20,18 @@
     
             .sobremi__titulo{
                 font-family: 'Montserrat', sans-serif;
-                font-size: 22px;
+                font-size: $fuente-titulos;
                 line-height: 1.2;
                 font-weight: 400;
                 text-transform: uppercase;
-                background-color: #F6E586;
+                background-color: $color-fondos;
                 padding: 1rem;
+                margin-bottom: 1rem;
             }
     
             .sobremi__parrafo{
                 font-family: 'Open Sans', sans-serif;
-                font-size: 14px;
+                font-size: $fuente-parrafos;
                 font-weight: 400;
                 margin-bottom: 1rem;
                 line-height: 1.5;
@@ -41,26 +41,27 @@
     }    
 }
 
-@media (max-widht: 576px) {
-    
+
+@media (max-width: 999px) {
     .sobremi{
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        margin-left: 2rem;
-        margin-right: 2rem;
-
-        .sobremi__div1{
-            width: 350px;
-            height: 250px;
-        }
-
-        .sobremi__titulo{
-            font-size: 16px;
-        }
-        
-        .sobremi__parrafo{
-            font-size: 14px;
-        }
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
+
+    .sobremi__div2{
+        margin-top: 2rem;
+    }
+}
+
+
+@media (max-width:576px) {
+
+    .sobremi__titulo{
+        font-size: 14px;
+    }
+
+    .sobremi__parrafo{
+        font-size: 12px;
+    }
+    
 }

@@ -8,7 +8,7 @@
     grid-area: footer;
 
     .footer__box{
-        width: 35%;
+        width: 300px;
 
         .footer__titulo{
             font-family: 'Open Sans', sans-serif;
@@ -41,5 +41,20 @@
         .footer__parrafo{
             font-size: 11px;
         }
+    }
+}
+
+
+
+@media (max-width: 999px) {
+    .footer{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        background-color: rgb(22, 22, 22);
+    }
+
+    .footer__titulo{
+        margin-top: 2rem;
     }
 }

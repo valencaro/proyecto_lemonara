@@ -1,50 +1,46 @@
 /*CONTACTO*/
 
 .contacto{
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-
-    .contacto__texto{
-        width: 40%;
-
-        .contacto__titulo{
-            font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
-            font-weight: 400;
-            text-transform: uppercase;
-            padding: 1rem;
-            margin-top: 2rem;
-            text-align: left;
-            background-color:#F6E586;
-        }
-
-        .contacto__parrafo{
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1rem;
-            font-weight: 400;
-            line-height: 1.5;
-            padding: 1rem;
-            text-align: left;
-        }
-    }
-
-    .formulario{
-        width: 40%;
-        justify-content: left;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+    .contacto__contenedor{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
         align-items: center;
-        padding: 1rem;
-    }
 
-    .contacto__imgdiv{
-        width: 40%;
+        .contacto__texto{
+            width: 500px;
+            padding: 2rem;
+    
+            .contacto__titulo{
+                font-family: 'Montserrat', sans-serif;
+                font-size: $fuente-titulos;
+                font-weight: 400;
+                text-transform: uppercase;
+                padding: 1rem;
+                margin-top: 2rem;
+                text-align: left;
+                background-color: $color-fondos;
+            }
+    
+            .contacto__parrafo{
+                font-family: 'Open Sans', sans-serif;
+                font-size: $fuente-parrafos;
+                font-weight: 400;
+                line-height: 1;
+                padding: 1rem;
+                text-align: left;
+            }
+        }
 
-        .imagen__contacto{
-            width: 100%;
+        .formulario{
+            width: 500px;
+            justify-content: left;
+            align-items: center;
+            padding: 2rem;
         }
     }
+
 }

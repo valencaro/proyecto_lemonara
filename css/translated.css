@@ -1,104 +1,19 @@
-/*VIEWS*/
-.promo {
-  background-color: #F6E586;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around; }
-  .promo .promo__box1 {
-    width: 300px;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    align-items: center;
-    text-align: center; }
-    .promo .promo__box1 .promo__subtitulo {
-      font-family: 'Josefin Sans', sans-serif;
-      font-style: normal;
-      font-size: 27px;
-      font-weight: 400;
-      line-height: 35px;
-      color: black;
-      padding-bottom: 1rem;
-      text-align: center;
-      letter-spacing: 1px; }
-    .promo .promo__box1 .promo__button {
-      background-color: black;
-      color: white;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      font-size: 1rem;
-      padding: 0.75rem; }
-  .promo .promo__box2 {
-    width: 415px;
-    margin-top: 4rem;
-    margin-bottom: 4rem; }
-    .promo .promo__box2 .promo__img {
-      width: 100%; }
+@charset "UTF-8";
+/*MISC*/
+/*COLORES*/
+/*TAMAÑOS*/
+@media (max-width: 999px) {
+  .sobremi {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .sobremi__div2 {
+    margin-top: 2rem; } }
 
-#bestsellers {
-  margin-left: 3rem;
-  margin-right: 3rem;
-  grid-area: bestsellers; }
-  #bestsellers .bestsellers__titulo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 1rem;
-    margin-top: 2rem;
-    text-align: center; }
-  #bestsellers .bestsellers__letra__subtitulo {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 1rem;
-    text-align: center;
-    margin-bottom: 2.2rem; }
-  #bestsellers .bestsellers__box {
-    display: flex;
-    flex-flow: row  wrap;
-    justify-content: space-around;
-    margin-bottom: 2rem; }
-    #bestsellers .bestsellers__box .bestsellers__div:hover {
-      transform: scale(1.15, 1.1); }
-    #bestsellers .bestsellers__box .bestsellers__div {
-      margin-bottom: 1.75rem;
-      transition: transform .7s; }
-      #bestsellers .bestsellers__box .bestsellers__div .bestsellers__img {
-        width: 230px;
-        height: 260px; }
-
-#testimonios {
-  background-color: #F6E586;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  grid-area: testimonios; }
-  #testimonios .testimonios__titulo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 1rem;
-    text-align: center;
-    padding-top: 2rem; }
-  #testimonios .testimonios__parrafo {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    padding: 1rem;
-    text-align: center; }
-  #testimonios .testimonios__box {
-    display: flex;
-    flex-flow: row  wrap;
-    justify-content: space-around; }
-    #testimonios .testimonios__box .testimonios__boximg {
-      width: 340px;
-      height: 320px;
-      margin-bottom: 2rem; }
-      #testimonios .testimonios__box .testimonios__boximg .testimonios__img {
-        width: 100%; }
+@media (max-width: 576px) {
+  .sobremi__titulo {
+    font-size: 14px; }
+  .sobremi__parrafo {
+    font-size: 12px; } }
 
 @media (max-width: 768px) {
   .promo {
@@ -108,165 +23,6 @@
     align-items: center; }
   .promo__box2 {
     padding-bottom: 3rem; } }
-
-.sobremi {
-  margin-top: 4rem;
-  margin-bottom: 4rem; }
-  .sobremi .sobremi__contenedor {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around; }
-    .sobremi .sobremi__contenedor .sobremi__div1 {
-      width: 500px;
-      height: 100px; }
-      .sobremi .sobremi__contenedor .sobremi__div1 .sobremi__img {
-        width: 100%; }
-    .sobremi .sobremi__contenedor .sobremi__div2 {
-      width: 500px; }
-      .sobremi .sobremi__contenedor .sobremi__div2 .sobremi__titulo {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 22px;
-        line-height: 1.2;
-        font-weight: 400;
-        text-transform: uppercase;
-        background-color: #F6E586;
-        padding: 1rem; }
-      .sobremi .sobremi__contenedor .sobremi__div2 .sobremi__parrafo {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 14px;
-        font-weight: 400;
-        margin-bottom: 1rem;
-        line-height: 1.5;
-        text-align: justify; }
-
-@media (max-widht: 576px) {
-  .sobremi {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    margin-left: 2rem;
-    margin-right: 2rem; }
-    .sobremi .sobremi__div1 {
-      width: 350px;
-      height: 250px; }
-    .sobremi .sobremi__titulo {
-      font-size: 16px; }
-    .sobremi .sobremi__parrafo {
-      font-size: 14px; } }
-
-.tortas__titulo {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding-bottom: 3rem;
-  background-color: #F6E586;
-  padding: 1rem;
-  text-align: center;
-  margin-top: 2rem; }
-
-#tortas {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  margin-top: 2rem;
-  margin-bottom: 2rem; }
-  #tortas .tortas1 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-arround;
-    margin-left: 5.6rem;
-    margin-right: 5.6rem;
-    margin-bottom: 2rem; }
-    #tortas .tortas1 .tortas__box {
-      margin-left: 3rem;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      width: 200px;
-      height: 280px; }
-      #tortas .tortas1 .tortas__box .tortas__img {
-        width: 100%; }
-  #tortas .tortas2 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin-left: 5.6rem;
-    margin-right: 5.6rem; }
-    #tortas .tortas2 .tortas__box2 {
-      margin-left: 3rem;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-      width: 200px;
-      height: 280px; }
-      #tortas .tortas2 .tortas__box2 .tortas__img {
-        width: 100%; }
-
-.desayunos .desayunos__div {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around; }
-  .desayunos .desayunos__div .desayunos__texto {
-    margin-top: 4rem;
-    margin-bottom: 4rem; }
-    .desayunos .desayunos__div .desayunos__texto .desayunos__titulo {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      text-transform: uppercase;
-      padding-bottom: 3rem;
-      background-color: #F6E586;
-      padding: 1rem; }
-    .desayunos .desayunos__div .desayunos__texto .desayunos__parrafo {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      line-height: 1.25; }
-  .desayunos .desayunos__div .desayunos__divimg {
-    margin-top: 4rem;
-    margin-bottom: 4rem; }
-    .desayunos .desayunos__div .desayunos__divimg .desayunos__img {
-      width: 100%;
-      height: 100%; }
-
-/*CONTACTO*/
-.contacto {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 4rem; }
-  .contacto .contacto__texto {
-    width: 40%; }
-    .contacto .contacto__texto .contacto__titulo {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 18px;
-      font-weight: 400;
-      text-transform: uppercase;
-      padding: 1rem;
-      margin-top: 2rem;
-      text-align: left;
-      background-color: #F6E586; }
-    .contacto .contacto__texto .contacto__parrafo {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.5;
-      padding: 1rem;
-      text-align: left; }
-  .contacto .formulario {
-    width: 40%;
-    justify-content: left;
-    align-items: center;
-    padding: 1rem; }
-  .contacto .contacto__imgdiv {
-    width: 40%; }
-    .contacto .contacto__imgdiv .imagen__contacto {
-      width: 100%; }
 
 /*PARTIALS*/
 header {
@@ -314,7 +70,7 @@ header {
   justify-content: space-around;
   grid-area: footer; }
   .footer .footer__box {
-    width: 35%; }
+    width: 300px; }
     .footer .footer__box .footer__titulo {
       font-family: 'Open Sans', sans-serif;
       font-size: 14px;
@@ -335,3 +91,292 @@ header {
       font-size: 12px; }
     .footer .footer__parrafo {
       font-size: 11px; } }
+
+@media (max-width: 999px) {
+  .footer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: #161616; }
+  .footer__titulo {
+    margin-top: 2rem; } }
+
+/*VIEWS*/
+.promo {
+  background-color: #F6E586;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around; }
+  .promo .promo__box1 {
+    width: 300px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    align-items: center;
+    text-align: center; }
+    .promo .promo__box1 .promo__subtitulo {
+      font-family: 'Josefin Sans', sans-serif;
+      font-style: normal;
+      font-size: 27px;
+      font-weight: 400;
+      line-height: 35px;
+      color: black;
+      padding-bottom: 1rem;
+      text-align: center;
+      letter-spacing: 1px; }
+    .promo .promo__box1 .promo__button {
+      background-color: black;
+      color: white;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      padding: 0.75rem; }
+  .promo .promo__box2 {
+    width: 415px;
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+    .promo .promo__box2 .promo__img {
+      width: 100%; }
+
+#bestsellers {
+  margin-left: 3rem;
+  margin-right: 3rem;
+  grid-area: bestsellers; }
+  #bestsellers .bestsellers__titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center; }
+  #bestsellers .bestsellers__letra__subtitulo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 2.2rem; }
+  #bestsellers .bestsellers__box {
+    display: flex;
+    flex-flow: row  wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem; }
+    #bestsellers .bestsellers__box .bestsellers__div:hover {
+      transform: scale(1.15, 1.1); }
+    #bestsellers .bestsellers__box .bestsellers__div {
+      margin-bottom: 1.75rem;
+      transition: transform .7s; }
+      #bestsellers .bestsellers__box .bestsellers__div .bestsellers__img {
+        width: 230px;
+        height: 260px; }
+
+#testimonios {
+  background-color: #F6E586;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  grid-area: testimonios; }
+  #testimonios .testimonios__titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 1rem;
+    text-align: center;
+    padding-top: 2rem; }
+  #testimonios .testimonios__parrafo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 1rem;
+    text-align: center; }
+  #testimonios .testimonios__box {
+    display: flex;
+    flex-flow: row  wrap;
+    justify-content: space-around; }
+    #testimonios .testimonios__box .testimonios__boximg {
+      width: 340px;
+      height: 320px;
+      margin-bottom: 2rem; }
+      #testimonios .testimonios__box .testimonios__boximg .testimonios__img {
+        width: 100%; }
+
+@media (max-width: 768px) {
+  .promo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center; }
+  .promo__box2 {
+    padding-bottom: 3rem; } }
+
+.sobremi {
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+  .sobremi .sobremi__contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .sobremi .sobremi__contenedor .sobremi__div1 {
+      width: 500px; }
+      .sobremi .sobremi__contenedor .sobremi__div1 .sobremi__img {
+        width: 100%; }
+    .sobremi .sobremi__contenedor .sobremi__div2 {
+      width: 500px; }
+      .sobremi .sobremi__contenedor .sobremi__div2 .sobremi__titulo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        line-height: 1.2;
+        font-weight: 400;
+        text-transform: uppercase;
+        background-color: #F6E586;
+        padding: 1rem;
+        margin-bottom: 1rem; }
+      .sobremi .sobremi__contenedor .sobremi__div2 .sobremi__parrafo {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        text-align: justify; }
+
+@media (max-width: 999px) {
+  .sobremi {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .sobremi__div2 {
+    margin-top: 2rem; } }
+
+@media (max-width: 576px) {
+  .sobremi__titulo {
+    font-size: 14px; }
+  .sobremi__parrafo {
+    font-size: 12px; } }
+
+.tortas__titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 3rem;
+  background-color: #F6E586;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 2rem; }
+
+#tortas {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem; }
+  #tortas .tortas1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-arround;
+    margin-bottom: 2rem; }
+    #tortas .tortas1 .tortas__box {
+      margin-left: 3rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      width: 200px;
+      height: 280px; }
+      #tortas .tortas1 .tortas__box .tortas__img {
+        width: 100%; }
+  #tortas .tortas2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem; }
+    #tortas .tortas2 .tortas__box2 {
+      margin-left: 3rem;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      width: 200px;
+      height: 280px; }
+      #tortas .tortas2 .tortas__box2 .tortas__img {
+        width: 100%; }
+
+.desayunos .desayunos__div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around; }
+  .desayunos .desayunos__div .desayunos__texto {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 500px;
+    align-items: center; }
+    .desayunos .desayunos__div .desayunos__texto .desayunos__titulo {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-bottom: 3rem;
+      background-color: #F6E586;
+      padding: 1rem; }
+    .desayunos .desayunos__div .desayunos__texto .desayunos__parrafo {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      line-height: 1.75; }
+  .desayunos .desayunos__div .desayunos__divimg {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 450px; }
+    .desayunos .desayunos__div .desayunos__divimg .desayunos__img {
+      width: 100%;
+      height: 100%; }
+
+@media (max-width: 976px) {
+  .desayunos__divimg {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem; } }
+
+@media (max-width: 999px) {
+  .desayunos {
+    margin-left: 1rem;
+    margin-right: 1rem; } }
+
+/*CONTACTO*/
+.contacto {
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
+  .contacto .contacto__contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center; }
+    .contacto .contacto__contenedor .contacto__texto {
+      width: 500px;
+      padding: 2rem; }
+      .contacto .contacto__contenedor .contacto__texto .contacto__titulo {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 1rem;
+        margin-top: 2rem;
+        text-align: left;
+        background-color: #F6E586; }
+      .contacto .contacto__contenedor .contacto__texto .contacto__parrafo {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1;
+        padding: 1rem;
+        text-align: left; }
+    .contacto .contacto__contenedor .formulario {
+      width: 500px;
+      justify-content: left;
+      align-items: center;
+      padding: 2rem; }

@@ -6,32 +6,35 @@
         justify-content: space-around;
 
         .desayunos__texto{
-            margin-top: 4rem;
-            margin-bottom: 4rem;
-
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            width: 500px;
+            align-items: center;
+    
             .desayunos__titulo{
                 font-family: 'Montserrat', sans-serif;
-                font-size: 18px;
+                font-size: $fuente-titulos;
                 font-weight: 400;
                 text-transform: uppercase;
                 padding-bottom: 3rem;
-                background-color: #F6E586;
+                background-color: $color-fondos;
                 padding: 1rem;
             }
-
+    
             .desayunos__parrafo{
                 font-family: 'Open Sans', sans-serif;
-                font-size: 16px;
+                font-size: $fuente-parrafos;
                 font-weight: 400;
                 margin-top: 1rem;
                 margin-bottom: 1rem;
-                line-height: 1.25;
+                line-height: 1.75;
             }
         }
-
+    
         .desayunos__divimg{
-            margin-top: 4rem;
-            margin-bottom: 4rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+            width: 450px;
 
             .desayunos__img{
                 width: 100%;
@@ -41,6 +44,19 @@
     }
 }
 
+@media (max-width: 976px) {
+    .desayunos__divimg{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 999px) {
+    .desayunos{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
 
 
 

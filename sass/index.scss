@@ -1,3 +1,13 @@
+/*MISC*/
+@import "./misc/variables";
+@import "./misc/normalize";
+@import "./misc/mediaquerys";
+
+
+/*PARTIALS*/
+@import "./partials/header";
+@import "./partials/footer";
+
 
 /*VIEWS*/
 @import "./views/home";
@@ -5,8 +15,3 @@
 @import "./views/tortasclasicas";
 @import "./views/desayunos";
 @import "./views/contacto";
-
-
-/*PARTIALS*/
-@import "./partials/header";
-@import "./partials/footer";

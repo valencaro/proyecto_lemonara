@@ -1,5 +1,5 @@
 .promo{
-    background-color: #F6E586;
+    background-color: $color-fondos;
     margin-top: 1rem;
     margin-bottom: 1rem;
     display: flex;
@@ -19,15 +19,15 @@
             font-size:27px;
             font-weight: 400;
             line-height: 35px;
-            color: black;
+            color: $color-primario;
             padding-bottom: 1rem;
             text-align: center;
             letter-spacing: 1px;
         }
 
         .promo__button{
-            background-color: black;
-            color: white;
+            background-color: $color-primario;
+            color: $color-secundario;
             font-family: 'Open Sans', sans-serif;
             font-weight: 400;
             font-size: 1rem;
@@ -53,7 +53,7 @@
 
     .bestsellers__titulo{
         font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
+        font-size: $fuente-titulos;
         font-weight: 400;
         text-transform: uppercase;
         padding: 1rem;
@@ -63,7 +63,7 @@
 
     .bestsellers__letra__subtitulo{
         font-family: 'Open Sans', sans-serif;
-        font-size: 1rem;
+        font-size: $fuente-parrafos;
         font-weight: 400;
         padding: 1rem;
         text-align: center;
@@ -93,14 +93,14 @@
 }
 
 #testimonios{
-    background-color: #F6E586;
+    background-color: $color-fondos;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     grid-area: testimonios;
 
     .testimonios__titulo{
         font-family: 'Montserrat', sans-serif;
-        font-size: 18px;
+        font-size: $fuente-titulos;
         font-weight: 400;
         text-transform: uppercase;
         padding: 1rem;
@@ -109,7 +109,7 @@
     }
     .testimonios__parrafo{
         font-family: 'Open Sans', sans-serif;
-        font-size: 1rem;
+        font-size: $fuente-parrafos;
         font-weight: 400;
         line-height: 1.5;
         padding: 1rem;
@@ -136,7 +136,7 @@
 @media (max-width: 768px){
     .promo{
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: column wrap;
         justify-content: center;
         align-items: center;
     }
@@ -145,3 +145,4 @@
         padding-bottom: 3rem;
     }
 }
+
