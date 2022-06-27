@@ -2,27 +2,13 @@
 /*MISC*/
 /*COLORES*/
 /*TAMAÑOS*/
-@media (max-width: 999px) {
-  .sobremi {
-    margin-left: 1rem;
-    margin-right: 1rem; }
-  .sobremi__div2 {
-    margin-top: 2rem; } }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
-@media (max-width: 576px) {
-  .sobremi__titulo {
-    font-size: 14px; }
-  .sobremi__parrafo {
-    font-size: 12px; } }
-
-@media (max-width: 768px) {
-  .promo {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center; }
-  .promo__box2 {
-    padding-bottom: 3rem; } }
+a {
+  text-decoration: none; }
 
 /*PARTIALS*/
 header {
@@ -59,10 +45,11 @@ header {
       color: white; }
     .menu .menu__item .menu__link--active {
       background-color: #daa2a2;
-      border-radius: 5px; }
+      border-radius: 3px; }
 
 .footer {
   background-color: black;
+  margin-top: 3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
@@ -102,46 +89,70 @@ header {
     margin-top: 2rem; } }
 
 /*VIEWS*/
-.promo {
+#presentation {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem; }
+  #presentation .parallax {
+    background-image: url(.././img/assortment-of-pieces-of-cake.jpg);
+    height: 650px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%; }
+    #presentation .parallax .parallax__text1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      text-align: left;
+      text-transform: uppercase;
+      font-size: 30px;
+      padding-top: 270px;
+      margin-left: 2rem; }
+    #presentation .parallax .parallax__text2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      text-align: left;
+      font-size: 23px;
+      margin-left: 2rem;
+      padding-top: 1rem; }
+
+.valores {
   background-color: #F6E586;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around; }
-  .promo .promo__box1 {
-    width: 300px;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    align-items: center;
-    text-align: center; }
-    .promo .promo__box1 .promo__subtitulo {
-      font-family: 'Josefin Sans', sans-serif;
-      font-style: normal;
-      font-size: 27px;
-      font-weight: 400;
-      line-height: 35px;
-      color: black;
-      padding-bottom: 1rem;
-      text-align: center;
-      letter-spacing: 1px; }
-    .promo .promo__box1 .promo__button {
-      background-color: black;
-      color: white;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      font-size: 1rem;
-      padding: 0.75rem; }
-  .promo .promo__box2 {
-    width: 415px;
-    margin-top: 4rem;
-    margin-bottom: 4rem; }
-    .promo .promo__box2 .promo__img {
+  .valores .valores__box1 {
+    width: 500px;
+    align-items: left; }
+    .valores .valores__box1 .valores__textos {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      margin-bottom: 2rem; }
+      .valores .valores__box1 .valores__textos .valores__titulo {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        text-align: left;
+        padding-bottom: 1rem; }
+      .valores .valores__box1 .valores__textos .valores__parrafo {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: left; }
+  .valores .promo__box2 {
+    width: 350px; }
+    .valores .promo__box2 .promo__img {
       width: 100%; }
 
 #bestsellers {
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   grid-area: bestsellers; }
   #bestsellers .bestsellers__titulo {
     font-family: 'Montserrat', sans-serif;
@@ -167,7 +178,8 @@ header {
       transform: scale(1.15, 1.1); }
     #bestsellers .bestsellers__box .bestsellers__div {
       margin-bottom: 1.75rem;
-      transition: transform .7s; }
+      transition: transform .7s;
+      cursor: pointer; }
       #bestsellers .bestsellers__box .bestsellers__div .bestsellers__img {
         width: 230px;
         height: 260px; }
@@ -211,6 +223,10 @@ header {
     align-items: center; }
   .promo__box2 {
     padding-bottom: 3rem; } }
+
+@media (max-width: 480px) {
+  .promo__box2 {
+    width: 300px; } }
 
 .sobremi {
   margin-top: 4rem;

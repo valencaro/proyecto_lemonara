@@ -1,44 +1,77 @@
-.promo{
-    background-color: $color-fondos;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+#presentation{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
 
-    .promo__box1{
-        width: 300px;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-        align-items: center;
-        text-align: center;
+    .parallax{
+        background-image: url(.././img/assortment-of-pieces-of-cake.jpg);
+        height: 650px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
     
-        .promo__subtitulo{
-            font-family: 'Josefin Sans', sans-serif;
-            font-style: normal;
-            font-size:27px;
+        .parallax__text1{
+            font-family: 'Montserrat', sans-serif;
             font-weight: 400;
-            line-height: 35px;
-            color: $color-primario;
-            padding-bottom: 1rem;
-            text-align: center;
-            letter-spacing: 1px;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 30px;
+            padding-top: 270px;
+            margin-left: 2rem;
         }
 
-        .promo__button{
-            background-color: $color-primario;
-            color: $color-secundario;
-            font-family: 'Open Sans', sans-serif;
+        .parallax__text2{
+            font-family: 'Montserrat', sans-serif;
             font-weight: 400;
-            font-size: 1rem;
-            padding: 0.75rem;
+            text-align: left;
+            font-size: 23px;
+            margin-left: 2rem;
+            padding-top: 1rem;
+        }
+    }
+}
+
+.valores{
+    background-color: $color-fondos;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+    .valores__box1{
+        width: 500px;
+        align-items: left;
+
+        .valores__textos{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            margin-bottom: 2rem;
+
+            .valores__titulo{
+                font-family: 'Josefin Sans', sans-serif;
+                font-weight: 400;
+                font-size: $fuente-titulos;
+                text-align: left;
+                padding-bottom: 1rem;
+            }
+
+            .valores__parrafo{
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                text-align: left;
+            }
         }
     }
 
     .promo__box2{
-        width: 415px;
-        margin-top: 4rem;
-        margin-bottom: 4rem;
+        width: 350px;
 
         .promo__img{
             width: 100%;
@@ -47,8 +80,8 @@
 }
 
 #bestsellers{
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     grid-area: bestsellers;
 
     .bestsellers__titulo{
@@ -83,6 +116,7 @@
         .bestsellers__div{
             margin-bottom: 1.75rem;
             transition: transform .7s;
+            cursor: pointer;
 
             .bestsellers__img{
                 width: 230px;
@@ -146,3 +180,9 @@
     }
 }
 
+@media (max-width: 480px) {
+
+    .promo__box2{
+        width: 300px;
+    }
+}
