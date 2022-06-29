@@ -1,0 +1,16 @@
+@mixin fondo-secciones {
+    background-color:#F6E586 ;
+}
+
+@mixin flex ($flex-flow, $jus) {
+    display: flex;
+    flex-flow: $flex-flow;
+    justify-content: $jus;
+}
+
+$colores: (
+    "primario": $color-primario, 
+    "secundario": $color-secundario,
+    "fondos": $color-fondos,
+    "link-header": $color-link-header,
+);

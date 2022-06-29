@@ -34,7 +34,6 @@
 }
 
 .valores{
-    background-color: $color-fondos;
     margin-top: 3rem;
     margin-bottom: 3rem;
     padding-top: 3rem;
@@ -42,16 +41,15 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    @include fondo-secciones;
 
     .valores__box1{
         width: 500px;
         align-items: left;
 
         .valores__textos{
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-            margin-bottom: 2rem;
+            @include flex (row wrap, space-around);
+            margin-bottom: 2rem; 
 
             .valores__titulo{
                 font-family: 'Josefin Sans', sans-serif;
@@ -69,11 +67,10 @@
             }
         }
     }
-
-    .promo__box2{
+    .valores__box2{
         width: 350px;
 
-        .promo__img{
+        .valores__img{
             width: 100%;
         }
     }
@@ -127,7 +124,7 @@
 }
 
 #testimonios{
-    background-color: $color-fondos;
+    @include fondo-secciones;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     grid-area: testimonios;

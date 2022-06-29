@@ -118,14 +118,14 @@ header {
       padding-top: 1rem; }
 
 .valores {
-  background-color: #F6E586;
   margin-top: 3rem;
   margin-bottom: 3rem;
   padding-top: 3rem;
   padding-bottom: 3rem;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  background-color: #F6E586; }
   .valores .valores__box1 {
     width: 500px;
     align-items: left; }
@@ -145,9 +145,9 @@ header {
         font-weight: 400;
         font-size: 14px;
         text-align: left; }
-  .valores .promo__box2 {
+  .valores .valores__box2 {
     width: 350px; }
-    .valores .promo__box2 .promo__img {
+    .valores .valores__box2 .valores__img {
       width: 100%; }
 
 #bestsellers {
@@ -396,3 +396,10 @@ header {
       justify-content: left;
       align-items: center;
       padding: 2rem; }
+    .contacto .contacto__contenedor .btn, .contacto .contacto__contenedor .btn__cancelar {
+      background-color: black;
+      color: white;
+      border-radius: 3px; }
+    .contacto .contacto__contenedor .btn__cancelar {
+      margin-top: 1rem;
+      background-color: #272626; }
