@@ -16,85 +16,85 @@
     <link rel="stylesheet" href="../css/translated.css">
 </head>
 <body>
-  <header>
-    <img class="menu__logo" src="../img/logo.png" alt="logo lemonara">
-    <nav>
-        <ul class="menu">
-            <li class="menu__item">
-                <a class="menu__link" href="../index.html">Home</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="sobremi.html">Sobre mi</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="tortasclasicas2.html">Tortas clasicas</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="desayunos.html">Desayunos</a>
-            </li>
-            <li class="menu__item menu__link--active">
-                <a class="menu__link menu__link--active" href="contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-  </header>
-    <section class="contacto">
-      <div class="contacto__contenedor">
-        <div class= "contacto__texto animate__animated animate__fadeIn">
-          <h3 class="contacto__titulo">Contacto</h3>
-          <p class="contacto__parrafo">Si tenés alguna consulta, no dudes en comunicarte conmigo para asesorarte</p>
-          <p class="contacto__parrafo">También podes dejarnos tus datos personales para que te llamemos y poder despejar tus dudas</p>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg" style="background-color: #ffffff">
+        <div class="container-fluid">
+            <img class="menu__logo navbar-brand" src="../img/logo.png" alt="logo lemonara">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="../index.html">Home</a>
+                  <a class="nav-link" href="sobremi.html">Sobre mí</a>
+                  <a class="nav-link" href="tortasclasicas2.html">Tortas clásicas</a>
+                  <a class="nav-link" href="desayunos.html">Desayunos</a>
+                  <a class="nav-link nav-link-active" href="contacto.html">Contacto</a>
+                </div>
+            </div>
         </div>
-        <form class="formulario animate__animated animate__fadeIn" action="get">
-          <div class="mb-3">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre completo">
-          </div>
-          <div class="mb-3">
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mail">
-          </div>
-          <div class="mb-3">
-            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Asunto">
-          </div>
-          <div class="mb-3">
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos tu mensaje aca"></textarea>
-          </div>
-          <div>
-            <button type="button" class="btn">Enviar</button>
-          </div>
-          <div>
-            <button type="button" class="btn__cancelar">Cancelar</button>
-          </div>
-        </form>
+    </nav>
+    <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <input type="checkbox" name="hamburger" id="hamburger">
+  </header>
+  <section class="contacto">
+    <div class="contacto__contenedor">
+      <div class= "contacto__texto animate__animated animate__fadeIn">
+        <h3 class="contacto__titulo">Contacto</h3>
+        <p class="contacto__parrafo">Si tenés alguna consulta, no dudes en comunicarte conmigo para asesorarte</p>
+        <p class="contacto__parrafo">También podes dejarnos tus datos personales para que te llamemos y poder despejar tus dudas</p>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="footer__box">
-          <h3 class="footer__titulo">LEMONARA PASTELERÍA</h3>
-          <p class="footer__parrafo">Te  acompañamos en los mejores momentos de la forma más dulce y rica. Nos gusta mejorar continuamente por eso trabajamos con la calidad y excelencia que todo producto necesita.</p>
-      </div>
-      <div class="footer__box">
-          <h3 class="footer__titulo">MI EMPRENDIMIENTO</h3>
-          <a href="sobremi.html">
-              <p class="footer__parrafo">Sobre mi</p>
-          </a>
-          <a href="tortasclasicas2.html">
-              <p class="footer__parrafo">Tortas clásicas</p>
-          </a>
-          <a href="desayunos.html">
-              <p class="footer__parrafo">Desayunos</p>
-          </a>
-          <a href="contacto.html">
-              <p class="footer__parrafo">Contacto</p>
-          </a>
-      </div>
-      <div class="footer__box">
-          <h3 class="footer__titulo">CONTACTO INFORMACIÓN</h3>
-          <p class="footer__parrafo">Paternal, Capital Federal</p>
-          <p class="footer__parrafo">Martes a sábados de 10:00 a 18:00hs</p>
-          <a class="footer__parrafo" href="https://www.instagram.com/lemonarapasteleria/?hl=es">Instagram</a>
-          <p class="footer__parrafo">Whatsapp: 11 3018-8283</p>
-      </div>
+      <form class="formulario animate__animated animate__fadeIn" action="get">
+        <div class="mb-3">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre completo">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Mail">
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Asunto">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Dejanos tu mensaje aca"></textarea>
+        </div>
+        <div>
+          <button type="button" class="btn">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer__box">
+        <h3 class="footer__titulo">LEMONARA PASTELERÍA</h3>
+        <p class="footer__parrafo">Te  acompañamos en los mejores momentos de la forma más dulce y rica. Nos gusta mejorar continuamente por eso trabajamos con la calidad y excelencia que todo producto necesita.</p>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__titulo">MI EMPRENDIMIENTO</h3>
+        <a href="sobremi.html">
+            <p class="footer__parrafo">Sobre mi</p>
+        </a>
+        <a href="tortasclasicas2.html">
+            <p class="footer__parrafo">Tortas clásicas</p>
+        </a>
+        <a href="desayunos.html">
+            <p class="footer__parrafo">Desayunos</p>
+        </a>
+        <a href="contacto.html">
+            <p class="footer__parrafo">Contacto</p>
+        </a>
+    </div>
+    <div class="footer__box">
+        <h3 class="footer__titulo">CONTACTO INFORMACIÓN</h3>
+        <p class="footer__parrafo">Paternal, Capital Federal</p>
+        <p class="footer__parrafo">Martes a sábados de 10:00 a 18:00hs</p>
+        <a class="footer__parrafo" href="https://www.instagram.com/lemonarapasteleria/?hl=es">Instagram</a>
+        <p class="footer__parrafo">Whatsapp: 11 3018-8283</p>
+    </div>
   </footer>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
